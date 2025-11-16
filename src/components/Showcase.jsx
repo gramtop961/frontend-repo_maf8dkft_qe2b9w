@@ -1,4 +1,4 @@
-import { Mountain, Gem, Castle, Palette, Rocket } from 'lucide-react'
+import { Mountain, Gem, Palette } from 'lucide-react'
 
 const items = [
   { title: 'Adventure', icon: Mountain, img: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop', tag: 'Experience' },
