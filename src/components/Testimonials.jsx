@@ -7,24 +7,24 @@ export default function Testimonials() {
   ]
 
   return (
-    <section className="bg-gray-50">
-      <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
+    <section className="relative bg-gray-950">
+      <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
         <div className="mb-8">
-          <p className="text-sm uppercase tracking-[0.35em] text-gray-500">Testimonials</p>
-          <h2 className="mt-2 text-4xl font-semibold text-gray-900">What partners say</h2>
+          <p className="text-sm uppercase tracking-[0.35em] text-white/50">Testimonials</p>
+          <h2 className="mt-2 text-4xl font-semibold text-white sm:text-5xl">What partners say</h2>
         </div>
 
         <div className="flex gap-6 overflow-x-auto pb-4 snap-x">
           {items.map((t)=> (
-            <div key={t.name} className="snap-start flex w-80 flex-none flex-col rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+            <div key={t.name} className="snap-start flex w-80 flex-none flex-col rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.6)] text-white">
               <div className="flex items-center gap-3">
                 <img src={t.img} alt={t.name} className="h-12 w-12 rounded-full object-cover" />
                 <div>
-                  <p className="font-medium text-gray-900">{t.name}</p>
-                  <p className="text-sm text-gray-600">{t.loc}</p>
+                  <p className="font-medium ">{t.name}</p>
+                  <p className="text-sm text-white/70">{t.loc}</p>
                 </div>
               </div>
-              <p className="mt-4 text-gray-700">“{t.text}”</p>
+              <p className="mt-4 text-white/80">“{t.text}”</p>
             </div>
           ))}
         </div>

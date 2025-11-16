@@ -9,20 +9,20 @@ export default function FAQ() {
   ]
 
   return (
-    <section id="faq" className="bg-white">
+    <section id="faq" className="relative bg-gray-950">
       <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
         <div className="mb-10">
-          <p className="text-sm uppercase tracking-[0.35em] text-gray-500">FAQ</p>
-          <h2 className="mt-2 text-4xl font-semibold text-gray-900">Answers, fast</h2>
+          <p className="text-sm uppercase tracking-[0.35em] text-white/50">FAQ</p>
+          <h2 className="mt-2 text-4xl font-semibold text-white sm:text-5xl">Answers, fast</h2>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {faqs.map((f,idx)=> (
-            <div key={f.q} className="rounded-3xl border border-gray-200 bg-gray-50 p-6 shadow-sm">
-              <span className="text-xs font-mono text-gray-500">{String(idx+1).padStart(2,'0')}</span>
-              <h3 className="mt-2 text-lg font-medium text-gray-900">{f.q}</h3>
-              <p className="mt-2 text-gray-600">{f.a}</p>
-              <button className="mt-4 rounded-full bg-gray-900 px-4 py-2 text-sm text-white">Learn more</button>
+            <div key={f.q} className="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.6)]">
+              <span className="text-xs font-mono text-white/50">{String(idx+1).padStart(2,'0')}</span>
+              <h3 className="mt-2 text-lg font-medium text-white">{f.q}</h3>
+              <p className="mt-2 text-white/70">{f.a}</p>
+              <button className="mt-4 rounded-full bg-white/90 hover:bg-white text-gray-900 px-4 py-2 text-sm transition">Learn more</button>
             </div>
           ))}
         </div>
